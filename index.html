@@ -2,30 +2,236 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="description" content="A brief description of your web page for search engines and SEO.">
-  <title>Document Title</title>
-  
-  <!-- Link to External Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jesus Oyervides | Resume</title>
+  <meta name="description" content="Jesus Oyervides: court clerk turned developer, building legal document automation tools. Austin, TX.">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <main class="page">
 
-  <!-- Page Content Goes Here -->
-  <header>
-    <h1>Welcome to My Website</h1>
-  </header>
+    <!-- ===================== HEADER ===================== -->
+    <header class="header">
+      <h1>Jesus Oyervides</h1>
+      <p class="tagline">Court operations background &middot; I build the tools that make legal paperwork faster</p>
 
-  <main>
-    <p>This is the main content area.</p>
+      <ul class="contact">
+        <li>Austin, TX</li>
+        <li>Bilingual: English &amp; Spanish</li>
+        <!-- Phone hidden on the public site. Uncomment to show it. -->
+        <!-- <li>(432) 631-3463</li> -->
+      </ul>
+
+      <nav class="links">
+        <a href="mailto:oyervidesjesus017@gmail.com">Email</a>
+        <a href="https://github.com/jesusoyer">GitHub</a>
+        <a href="https://jesoyer.com">Portfolio</a>
+        <!-- <a href="https://www.linkedin.com/in/your-profile">LinkedIn</a> -->
+      </nav>
+    </header>
+
+    <!-- ===================== COMPETENCIES ===================== -->
+    <section>
+      <h2>Core Competencies</h2>
+      <div class="skill-groups">
+        <div class="skill-group">
+          <h3>Legal &amp; Records</h3>
+          <ul class="chips">
+            <li>Legal document preparation &amp; proofreading</li>
+            <li>Odyssey case management</li>
+            <li>E-filing &amp; records retention</li>
+            <li>Legal terminology &amp; court systems</li>
+            <li>Judicial calendaring</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Office &amp; Automation</h3>
+          <ul class="chips">
+            <li>Excel: pivot tables, VLOOKUP</li>
+            <li>VBA &amp; macros</li>
+            <li>Adobe Acrobat Pro JavaScript</li>
+            <li>Microsoft Office Suite</li>
+            <li>AI/GPT tools &amp; prompting</li>
+          </ul>
+        </div>
+        <div class="skill-group">
+          <h3>Development &amp; Cloud</h3>
+          <ul class="chips">
+            <li>HTML, CSS, JavaScript</li>
+            <li>React &amp; Next.js</li>
+            <li>AWS S3 &amp; IAM Identity Center</li>
+            <li>AWS CLI</li>
+            <li>Git &amp; GitHub</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PROJECTS ===================== -->
+    <section>
+      <h2>Projects</h2>
+      <p class="section-note">Tools I built to solve real problems in the offices I worked in, plus what I'm building now.</p>
+
+      <div class="projects">
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Letter Templates &amp; Multi-Form Document System</h3>
+            <span class="year">2025</span>
+          </div>
+          <p class="impact">6 letter types &rarr; 1 tool &middot; used daily by the Director</p>
+          <p>Attorneys and staff kept recreating the same six official letters by hand. I consolidated them into one web app with editable fields, consistent formatting, and print-to-PDF output. Adopted by division leadership.</p>
+          <ul class="tech"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+          <div class="card-links"><span class="internal">Internal tool &middot; Travis County</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>JavaScript-Powered Reusable PDF Letter</h3>
+            <span class="year">2024</span>
+          </div>
+          <p class="impact">10&ndash;15 min task &rarr; 2&ndash;5 min</p>
+          <p>Replaced a manual Word-based letter process with a reusable PDF that fills itself in through smart, scripted text fields. Approved and still in use today.</p>
+          <ul class="tech"><li>JavaScript</li><li>Acrobat PDF</li></ul>
+          <div class="card-links"><span class="internal">Internal tool &middot; Travis County</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Agency Uploads Workflow</h3>
+            <span class="year">2024</span>
+          </div>
+          <p class="impact">Email back-and-forth &rarr; click-only workbook</p>
+          <p>Turned a repetitive email workflow into an Excel workbook whose VBA code automates the busywork, eliminating manual keyboard entry entirely.</p>
+          <ul class="tech"><li>Excel</li><li>VBA</li><li>Process automation</li></ul>
+          <div class="card-links"><span class="internal">Internal tool &middot; Travis County</span></div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3>Clerk's Corner</h3>
+            <span class="year">2026</span>
+          </div>
+          <p class="impact">Free legal tools for clerks nationwide</p>
+          <p>A browser-based suite of administrative tools for legal and government staff, including backtime and date calculators. Runs entirely in the browser, so case data never leaves the user's device.</p>
+          <ul class="tech"><li>React</li><li>Next.js</li><li>JavaScript</li></ul>
+          <div class="card-links">
+            <a href="https://clerk-calculator-juej13j7i-jesusoyers-projects.vercel.app">Live site &rarr;</a>
+            <a href="https://github.com/jesusoyer/Clerk-Calculator">Code &rarr;</a>
+          </div>
+        </article>
+
+        <article class="card card-wide">
+          <div class="card-top">
+            <h3>Cloud Resume Challenge</h3>
+            <span class="year">2026</span>
+          </div>
+          <p class="impact">You're looking at it</p>
+          <p>This resume is a static site on Amazon S3, deployed from the AWS CLI inside a multi-account AWS Organization. Sign-in uses IAM Identity Center (SSO) with MFA and short-lived credentials instead of stored access keys.</p>
+          <ul class="tech"><li>AWS S3</li><li>IAM Identity Center</li><li>AWS CLI</li><li>HTML</li><li>CSS</li><li>GitHub</li></ul>
+          <div class="card-links">
+            <a href="https://github.com/jesusoyer/cloud-resume">Code &rarr;</a>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- ===================== EXPERIENCE ===================== -->
+    <section>
+      <h2>Experience</h2>
+
+      <ol class="timeline">
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Travis County District Clerk &mdash; Criminal Division</h3>
+            <span class="year">Jun 2024 &ndash; Aug 2026</span>
+          </div>
+          <p class="place">Austin, TX</p>
+
+          <div class="role">
+            <div class="role-head">
+              <h4>Court Clerk II</h4>
+              <span class="year">Jan 2025 &ndash; Aug 2026</span>
+            </div>
+            <ul>
+              <li>Prepared, proofread, and formatted court orders, pleadings, legal notices, and official correspondence to court standards.</li>
+              <li>Managed documents in the Odyssey case management system with consistent naming, filing, and retrieval standards.</li>
+              <li>Processed e-filed and emailed documents, verifying accuracy and completeness before routing.</li>
+              <li>Managed calendars for multiple judges, coordinating hearings, conferences, and meetings.</li>
+              <li>Supported attorneys, judges, and staff across practice areas while keeping sealed and sensitive records strictly confidential.</li>
+              <li><strong>Built document generation tools adopted by leadership and used daily by the Director.</strong></li>
+            </ul>
+          </div>
+
+          <div class="role">
+            <div class="role-head">
+              <h4>Court Clerk I &mdash; Records Division</h4>
+              <span class="year">Jun 2024 &ndash; Jan 2025</span>
+            </div>
+            <ul>
+              <li>Received, organized, filed, and archived high-volume physical and electronic records under retention requirements.</li>
+              <li>Reviewed and routed legal requests, subpoenas, and filings with strict attention to detail.</li>
+              <li>Wrote SOPs that improved filing consistency and reduced retrieval errors across the division.</li>
+            </ul>
+          </div>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Lorenz and Lorenz L.L.P.</h3>
+            <span class="year">May 2021 &ndash; Jun 2021</span>
+          </div>
+          <p class="place">Bilingual Legal Assistant &amp; Investigator &middot; Austin, TX</p>
+          <ul>
+            <li>Supported personal injury attorneys with client intake, case files, and coordination between clients, insurers, and medical providers.</li>
+            <li>Served as the primary bilingual contact for Spanish-speaking clients.</li>
+            <li><strong>Converted a paper intake process to an electronic system, improving accuracy and cutting processing time.</strong></li>
+          </ul>
+        </li>
+
+        <li class="job">
+          <div class="job-head">
+            <h3>Midland County Warrant Services</h3>
+            <span class="year">Sep 2014 &ndash; Mar 2021</span>
+          </div>
+          <p class="place">Warrant Clerk &middot; Midland, TX</p>
+          <ul>
+            <li>Managed high-volume warrant records for 6.5 years in compliance with state and local requirements.</li>
+            <li>Prepared official correspondence and internal documentation with accuracy and timely delivery.</li>
+            <li>Coordinated with law enforcement and legal personnel on active cases with professionalism and discretion.</li>
+          </ul>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- ===================== EDUCATION ===================== -->
+    <section>
+      <h2>Education</h2>
+      <ul class="edu">
+        <li>
+          <div><strong>Microsoft Excel Professional Certificate</strong> <span class="pill">In progress</span><br><span class="place">Microsoft &amp; Coursera</span></div>
+          <span class="year">2026</span>
+        </li>
+        <li>
+          <div><strong>Full-Stack Web Development Certificate</strong><br><span class="place">University of Texas at Austin</span></div>
+          <span class="year">2022</span>
+        </li>
+        <li>
+          <div><strong>Associate of Arts &mdash; General Studies</strong><br><span class="place">Midland College &middot; Midland, TX</span></div>
+          <span class="year">2020</span>
+        </li>
+      </ul>
+    </section>
+
+    <!-- ===================== FOOTER ===================== -->
+    <footer class="footer">
+      <p>Visitors: <span id="visitor-count">&ndash;</span> &middot; Hosted on AWS &middot; <a href="https://github.com/jesusoyer/cloud-resume">View source</a></p>
+    </footer>
+
   </main>
-
-  <footer>
-    <p>&copy; 2026 Your Name or Company. All rights reserved.</p>
-  </footer>
-
-  <!-- Link to External JavaScript (Placed before closing body tag for performance) -->
-  <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
