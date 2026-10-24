@@ -1,5 +1,5 @@
 // The address of your visitor counter API
-const API_URL = "https://2ge1l6mfi1.execute-api.us-east-1.amazonaws.com/count";
+const API_URL = "https://9dgik3c4lh.execute-api.us-east-1.amazonaws.com/count";
 
 async function updateVisitorCount() {
   const counter = document.getElementById("visitor-count");
